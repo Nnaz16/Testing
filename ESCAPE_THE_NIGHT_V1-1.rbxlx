@@ -1,0 +1,1949 @@
+<?xml version='1.0' encoding='utf-8'?>
+<roblox version="4">
+  <Item class="Workspace">
+    <Properties>
+      <string name="Name">Workspace</string>
+    </Properties>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Ground</string>
+        <Vector3 name="Size">
+          <X>300</X>
+          <Y>2</Y>
+          <Z>300</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>-1</Y>
+          <Z>0</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.12</R>
+          <G>0.19</G>
+          <B>0.12</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">1</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">LobbyPlatform</string>
+        <Vector3 name="Size">
+          <X>70</X>
+          <Y>2</Y>
+          <Z>60</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>1</Y>
+          <Z>-90</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.18</R>
+          <G>0.2</G>
+          <B>0.23</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">6</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">FacilityFloor</string>
+        <Vector3 name="Size">
+          <X>100</X>
+          <Y>2</Y>
+          <Z>100</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>1</Y>
+          <Z>0</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.28</R>
+          <G>0.28</G>
+          <B>0.3</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">OuterWall</string>
+        <Vector3 name="Size">
+          <X>3</X>
+          <Y>28</Y>
+          <Z>100</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-51</X>
+          <Y>14</Y>
+          <Z>0</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.17</R>
+          <G>0.18</G>
+          <B>0.2</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">OuterWall</string>
+        <Vector3 name="Size">
+          <X>3</X>
+          <Y>28</Y>
+          <Z>100</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>51</X>
+          <Y>14</Y>
+          <Z>0</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.17</R>
+          <G>0.18</G>
+          <B>0.2</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">OuterWall</string>
+        <Vector3 name="Size">
+          <X>100</X>
+          <Y>28</Y>
+          <Z>3</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>14</Y>
+          <Z>-51</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.17</R>
+          <G>0.18</G>
+          <B>0.2</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">OuterWall</string>
+        <Vector3 name="Size">
+          <X>100</X>
+          <Y>28</Y>
+          <Z>3</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>14</Y>
+          <Z>51</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.17</R>
+          <G>0.18</G>
+          <B>0.2</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Ceiling</string>
+        <Vector3 name="Size">
+          <X>100</X>
+          <Y>2</Y>
+          <Z>100</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>28</Y>
+          <Z>0</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.12</R>
+          <G>0.13</G>
+          <B>0.15</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">InteriorWall</string>
+        <Vector3 name="Size">
+          <X>3</X>
+          <Y>18</Y>
+          <Z>65</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-20</X>
+          <Y>9</Y>
+          <Z>0</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.21</R>
+          <G>0.22</G>
+          <B>0.23</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">InteriorWall</string>
+        <Vector3 name="Size">
+          <X>3</X>
+          <Y>18</Y>
+          <Z>65</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>20</X>
+          <Y>9</Y>
+          <Z>0</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.21</R>
+          <G>0.22</G>
+          <B>0.23</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">InteriorWall</string>
+        <Vector3 name="Size">
+          <X>65</X>
+          <Y>18</Y>
+          <Z>3</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>9</Y>
+          <Z>-20</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.21</R>
+          <G>0.22</G>
+          <B>0.23</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">InteriorWall</string>
+        <Vector3 name="Size">
+          <X>65</X>
+          <Y>18</Y>
+          <Z>3</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>9</Y>
+          <Z>20</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.21</R>
+          <G>0.22</G>
+          <B>0.23</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">InteriorWall</string>
+        <Vector3 name="Size">
+          <X>3</X>
+          <Y>18</Y>
+          <Z>25</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-35</X>
+          <Y>9</Y>
+          <Z>25</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.21</R>
+          <G>0.22</G>
+          <B>0.23</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">InteriorWall</string>
+        <Vector3 name="Size">
+          <X>3</X>
+          <Y>18</Y>
+          <Z>25</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>35</X>
+          <Y>9</Y>
+          <Z>-25</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.21</R>
+          <G>0.22</G>
+          <B>0.23</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">SupportColumn</string>
+        <Vector3 name="Size">
+          <X>4</X>
+          <Y>24</Y>
+          <Z>4</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-40</X>
+          <Y>12</Y>
+          <Z>-35</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.25</R>
+          <G>0.26</G>
+          <B>0.28</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">SupportColumn</string>
+        <Vector3 name="Size">
+          <X>4</X>
+          <Y>24</Y>
+          <Z>4</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>40</X>
+          <Y>12</Y>
+          <Z>-35</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.25</R>
+          <G>0.26</G>
+          <B>0.28</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">SupportColumn</string>
+        <Vector3 name="Size">
+          <X>4</X>
+          <Y>24</Y>
+          <Z>4</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-40</X>
+          <Y>12</Y>
+          <Z>35</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.25</R>
+          <G>0.26</G>
+          <B>0.28</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">SupportColumn</string>
+        <Vector3 name="Size">
+          <X>4</X>
+          <Y>24</Y>
+          <Z>4</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>40</X>
+          <Y>12</Y>
+          <Z>35</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.25</R>
+          <G>0.26</G>
+          <B>0.28</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">SupportColumn</string>
+        <Vector3 name="Size">
+          <X>4</X>
+          <Y>24</Y>
+          <Z>4</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>12</Y>
+          <Z>-40</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.25</R>
+          <G>0.26</G>
+          <B>0.28</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">SupportColumn</string>
+        <Vector3 name="Size">
+          <X>4</X>
+          <Y>24</Y>
+          <Z>4</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>12</Y>
+          <Z>40</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.25</R>
+          <G>0.26</G>
+          <B>0.28</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">2</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">CeilingLamp</string>
+        <Vector3 name="Size">
+          <X>10</X>
+          <Y>0.4</Y>
+          <Z>3</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-30</X>
+          <Y>26</Y>
+          <Z>-30</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.75</R>
+          <G>0.78</G>
+          <B>0.8</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">3</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+      <Item class="PointLight">
+        <Properties>
+          <string name="Name">LampLight</string>
+          <float name="Brightness">1.5</float>
+          <float name="Range">18</float>
+          <bool name="Enabled">true</bool>
+        </Properties>
+      </Item>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">CeilingLamp</string>
+        <Vector3 name="Size">
+          <X>10</X>
+          <Y>0.4</Y>
+          <Z>3</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>30</X>
+          <Y>26</Y>
+          <Z>-30</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.75</R>
+          <G>0.78</G>
+          <B>0.8</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">3</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+      <Item class="PointLight">
+        <Properties>
+          <string name="Name">LampLight</string>
+          <float name="Brightness">1.5</float>
+          <float name="Range">18</float>
+          <bool name="Enabled">true</bool>
+        </Properties>
+      </Item>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">CeilingLamp</string>
+        <Vector3 name="Size">
+          <X>10</X>
+          <Y>0.4</Y>
+          <Z>3</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-30</X>
+          <Y>26</Y>
+          <Z>30</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.75</R>
+          <G>0.78</G>
+          <B>0.8</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">3</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+      <Item class="PointLight">
+        <Properties>
+          <string name="Name">LampLight</string>
+          <float name="Brightness">1.5</float>
+          <float name="Range">18</float>
+          <bool name="Enabled">true</bool>
+        </Properties>
+      </Item>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">CeilingLamp</string>
+        <Vector3 name="Size">
+          <X>10</X>
+          <Y>0.4</Y>
+          <Z>3</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>30</X>
+          <Y>26</Y>
+          <Z>30</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.75</R>
+          <G>0.78</G>
+          <B>0.8</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">3</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+      <Item class="PointLight">
+        <Properties>
+          <string name="Name">LampLight</string>
+          <float name="Brightness">1.5</float>
+          <float name="Range">18</float>
+          <bool name="Enabled">true</bool>
+        </Properties>
+      </Item>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">CeilingLamp</string>
+        <Vector3 name="Size">
+          <X>10</X>
+          <Y>0.4</Y>
+          <Z>3</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>26</Y>
+          <Z>0</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.75</R>
+          <G>0.78</G>
+          <B>0.8</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">3</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+      <Item class="PointLight">
+        <Properties>
+          <string name="Name">LampLight</string>
+          <float name="Brightness">1.5</float>
+          <float name="Range">18</float>
+          <bool name="Enabled">true</bool>
+        </Properties>
+      </Item>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">SafeZone</string>
+        <Vector3 name="Size">
+          <X>35</X>
+          <Y>2</Y>
+          <Z>25</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>2</Y>
+          <Z>70</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.15</R>
+          <G>0.3</G>
+          <B>0.2</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">5</token>
+        <float name="Transparency">0.35</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">SafeZoneSign</string>
+        <Vector3 name="Size">
+          <X>18</X>
+          <Y>3</Y>
+          <Z>1</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>8</Y>
+          <Z>70</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.2</R>
+          <G>0.8</G>
+          <B>0.35</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">5</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">EscapePlatform</string>
+        <Vector3 name="Size">
+          <X>30</X>
+          <Y>2</Y>
+          <Z>20</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>2</Y>
+          <Z>115</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.1</R>
+          <G>0.5</G>
+          <B>0.4</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">5</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">EscapeDoor</string>
+        <Vector3 name="Size">
+          <X>14</X>
+          <Y>18</Y>
+          <Z>2</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>10</Y>
+          <Z>50</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.4</R>
+          <G>0.1</G>
+          <B>0.1</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">3</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-43</X>
+          <Y>3</Y>
+          <Z>-40</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-26</X>
+          <Y>3</Y>
+          <Z>-40</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-9</X>
+          <Y>3</Y>
+          <Z>-40</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>8</X>
+          <Y>3</Y>
+          <Z>-40</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>25</X>
+          <Y>3</Y>
+          <Z>-40</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>42</X>
+          <Y>3</Y>
+          <Z>-40</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-43</X>
+          <Y>3</Y>
+          <Z>-5</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-26</X>
+          <Y>3</Y>
+          <Z>-5</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-9</X>
+          <Y>3</Y>
+          <Z>-5</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>8</X>
+          <Y>3</Y>
+          <Z>-5</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>25</X>
+          <Y>3</Y>
+          <Z>-5</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>42</X>
+          <Y>3</Y>
+          <Z>-5</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-43</X>
+          <Y>3</Y>
+          <Z>30</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-26</X>
+          <Y>3</Y>
+          <Z>30</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-9</X>
+          <Y>3</Y>
+          <Z>30</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>8</X>
+          <Y>3</Y>
+          <Z>30</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>25</X>
+          <Y>3</Y>
+          <Z>30</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">Crate</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>5</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>42</X>
+          <Y>3</Y>
+          <Z>30</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.35</R>
+          <G>0.25</G>
+          <B>0.17</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">4</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">KeyPickup1</string>
+        <Vector3 name="Size">
+          <X>2</X>
+          <Y>2</Y>
+          <Z>2</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-40</X>
+          <Y>3</Y>
+          <Z>-40</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.9</R>
+          <G>0.7</G>
+          <B>0.1</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">5</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+      <Item class="ProximityPrompt">
+        <Properties>
+          <string name="Name">CollectPrompt</string>
+          <string name="ActionText">Collect Key</string>
+          <string name="ObjectText">Facility Key</string>
+          <float name="HoldDuration">0</float>
+          <bool name="Enabled">true</bool>
+          <float name="MaxActivationDistance">10</float>
+        </Properties>
+      </Item>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">KeyPickup2</string>
+        <Vector3 name="Size">
+          <X>2</X>
+          <Y>2</Y>
+          <Z>2</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>40</X>
+          <Y>3</Y>
+          <Z>-40</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.9</R>
+          <G>0.7</G>
+          <B>0.1</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">5</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+      <Item class="ProximityPrompt">
+        <Properties>
+          <string name="Name">CollectPrompt</string>
+          <string name="ActionText">Collect Key</string>
+          <string name="ObjectText">Facility Key</string>
+          <float name="HoldDuration">0</float>
+          <bool name="Enabled">true</bool>
+          <float name="MaxActivationDistance">10</float>
+        </Properties>
+      </Item>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">KeyPickup3</string>
+        <Vector3 name="Size">
+          <X>2</X>
+          <Y>2</Y>
+          <Z>2</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>-40</X>
+          <Y>3</Y>
+          <Z>40</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.9</R>
+          <G>0.7</G>
+          <B>0.1</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">5</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+      <Item class="ProximityPrompt">
+        <Properties>
+          <string name="Name">CollectPrompt</string>
+          <string name="ActionText">Collect Key</string>
+          <string name="ObjectText">Facility Key</string>
+          <float name="HoldDuration">0</float>
+          <bool name="Enabled">true</bool>
+          <float name="MaxActivationDistance">10</float>
+        </Properties>
+      </Item>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">KeyPickup4</string>
+        <Vector3 name="Size">
+          <X>2</X>
+          <Y>2</Y>
+          <Z>2</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>40</X>
+          <Y>3</Y>
+          <Z>40</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.9</R>
+          <G>0.7</G>
+          <B>0.1</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">5</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+      <Item class="ProximityPrompt">
+        <Properties>
+          <string name="Name">CollectPrompt</string>
+          <string name="ActionText">Collect Key</string>
+          <string name="ObjectText">Facility Key</string>
+          <float name="HoldDuration">0</float>
+          <bool name="Enabled">true</bool>
+          <float name="MaxActivationDistance">10</float>
+        </Properties>
+      </Item>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">KeyPickup5</string>
+        <Vector3 name="Size">
+          <X>2</X>
+          <Y>2</Y>
+          <Z>2</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>3</Y>
+          <Z>0</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.9</R>
+          <G>0.7</G>
+          <B>0.1</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">5</token>
+        <float name="Transparency">0</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+      <Item class="ProximityPrompt">
+        <Properties>
+          <string name="Name">CollectPrompt</string>
+          <string name="ActionText">Collect Key</string>
+          <string name="ObjectText">Facility Key</string>
+          <float name="HoldDuration">0</float>
+          <bool name="Enabled">true</bool>
+          <float name="MaxActivationDistance">10</float>
+        </Properties>
+      </Item>
+    </Item>
+    <Item class="SpawnLocation">
+      <Properties>
+        <string name="Name">LobbySpawn</string>
+        <Vector3 name="Size">
+          <X>8</X>
+          <Y>1</Y>
+          <Z>8</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>3</Y>
+          <Z>-90</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.2</R>
+          <G>0.7</G>
+          <B>0.2</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <bool name="Neutral">true</bool>
+      </Properties>
+    </Item>
+    <Item class="Part">
+      <Properties>
+        <string name="Name">MonsterSpawn</string>
+        <Vector3 name="Size">
+          <X>5</X>
+          <Y>1</Y>
+          <Z>5</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>3</Y>
+          <Z>-10</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.5</R>
+          <G>0.1</G>
+          <B>0.1</B>
+        </Color3>
+        <bool name="Anchored">true</bool>
+        <token name="Material">5</token>
+        <float name="Transparency">0.65</float>
+        <bool name="CanCollide">true</bool>
+      </Properties>
+    </Item>
+  <Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>19</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>9.5</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>22</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>16</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>8.0</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>19</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>20</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>-123</X><Y>10.0</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-123</X><Y>23</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>17</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>-123</X><Y>8.5</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-123</X><Y>20</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>14</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>-101</X><Y>7.0</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-101</X><Y>17</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>18</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>-101</X><Y>9.0</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-101</X><Y>21</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>12</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>-79</X><Y>6.0</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-79</X><Y>15</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>17</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>-79</X><Y>8.5</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-79</X><Y>20</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>19</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>-57</X><Y>9.5</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-57</X><Y>22</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>16</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>-57</X><Y>8.0</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-57</X><Y>19</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>19</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>-35</X><Y>9.5</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-35</X><Y>22</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>15</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>-35</X><Y>7.5</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-35</X><Y>18</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>20</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>-13</X><Y>10.0</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-13</X><Y>23</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>12</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>-13</X><Y>6.0</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-13</X><Y>15</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>14</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>9</X><Y>7.0</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>9</X><Y>17</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>19</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>9</X><Y>9.5</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>9</X><Y>22</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>17</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>31</X><Y>8.5</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>31</X><Y>20</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>14</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>31</X><Y>7.0</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>31</X><Y>17</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>17</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>53</X><Y>8.5</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>53</X><Y>20</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>15</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>53</X><Y>7.5</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>53</X><Y>18</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>12</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>75</X><Y>6.0</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>75</X><Y>15</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>15</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>75</X><Y>7.5</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>75</X><Y>18</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>13</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>97</X><Y>6.5</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>97</X><Y>16</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>20</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>97</X><Y>10.0</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>97</X><Y>23</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>17</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>119</X><Y>8.5</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>119</X><Y>20</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>18</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>119</X><Y>9.0</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>119</X><Y>21</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>13</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>141</X><Y>6.5</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>141</X><Y>16</Y><Z>-145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2.2</X><Y>12</Y><Z>2.2</Z></Vector3><CoordinateFrame name="CFrame"><X>141</X><Y>6.0</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>141</X><Y>15</Y><Z>145</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>13</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>6.5</Y><Z>-130</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>16</Y><Z>-130</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>19</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>9.5</Y><Z>-130</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>22</Y><Z>-130</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>18</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>9.0</Y><Z>-108</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>21</Y><Z>-108</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>17</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>8.5</Y><Z>-108</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>20</Y><Z>-108</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>14</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>7.0</Y><Z>-86</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>17</Y><Z>-86</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>13</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>6.5</Y><Z>-86</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>16</Y><Z>-86</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>16</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>8.0</Y><Z>-64</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>19</Y><Z>-64</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>16</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>8.0</Y><Z>-64</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>19</Y><Z>-64</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>13</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>6.5</Y><Z>-42</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>16</Y><Z>-42</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>18</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>9.0</Y><Z>-42</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>21</Y><Z>-42</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>16</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>8.0</Y><Z>-20</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>19</Y><Z>-20</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>14</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>7.0</Y><Z>-20</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>17</Y><Z>-20</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>17</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>8.5</Y><Z>2</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>20</Y><Z>2</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>15</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>7.5</Y><Z>2</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>18</Y><Z>2</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>17</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>8.5</Y><Z>24</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>20</Y><Z>24</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>17</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>8.5</Y><Z>24</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>20</Y><Z>24</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>14</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>7.0</Y><Z>46</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>17</Y><Z>46</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>18</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>9.0</Y><Z>46</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>21</Y><Z>46</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>13</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>6.5</Y><Z>68</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>16</Y><Z>68</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>17</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>8.5</Y><Z>68</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>20</Y><Z>68</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>14</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>7.0</Y><Z>90</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>17</Y><Z>90</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>17</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>8.5</Y><Z>90</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>20</Y><Z>90</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>19</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>9.5</Y><Z>112</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-145</X><Y>22</Y><Z>112</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineTrunk</string><Vector3 name="Size"><X>2</X><Y>13</Y><Z>2</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>6.5</Y><Z>112</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.2</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">PineCanopy</string><Vector3 name="Size"><X>10</X><Y>9</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>145</X><Y>16</Y><Z>112</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.2</G><B>0.12</B></Color3><bool name="Anchored">true</bool><token name="Material">3</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>2.3362978636618106</X><Y>0.6287130812834036</Y><Z>2.218592798480114</Z></Vector3><CoordinateFrame name="CFrame"><X>9</X><Y>0.5</Y><Z>15</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>2.281455885266176</X><Y>0.3578646993430049</Y><Z>1.3837328102633917</Z></Vector3><CoordinateFrame name="CFrame"><X>27</X><Y>0.5</Y><Z>-35</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>1.712690382318017</X><Y>0.5541899897626956</Y><Z>2.3802289275168507</Z></Vector3><CoordinateFrame name="CFrame"><X>42</X><Y>0.5</Y><Z>-5</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>1.504755381270832</X><Y>0.5346628535861199</Y><Z>1.7425320671700015</Z></Vector3><CoordinateFrame name="CFrame"><X>-3</X><Y>0.5</Y><Z>-24</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>1.3588169370314964</X><Y>0.5666406979843774</Y><Z>2.7181669388734457</Z></Vector3><CoordinateFrame name="CFrame"><X>31</X><Y>0.5</Y><Z>26</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>1.0514818910087338</X><Y>0.7729580484261374</Y><Z>1.086966952506395</Z></Vector3><CoordinateFrame name="CFrame"><X>-38</X><Y>0.5</Y><Z>28</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>2.5065914176400206</X><Y>0.45444848853822545</Y><Z>1.1559619858249357</Z></Vector3><CoordinateFrame name="CFrame"><X>-16</X><Y>0.5</Y><Z>-25</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>1.866964836069161</X><Y>0.6488098147580394</Y><Z>2.204135621144319</Z></Vector3><CoordinateFrame name="CFrame"><X>-7</X><Y>0.5</Y><Z>-34</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>1.9185240770623915</X><Y>0.44615540383578633</Y><Z>1.5637915947382268</Z></Vector3><CoordinateFrame name="CFrame"><X>-36</X><Y>0.5</Y><Z>27</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>1.4798247509582618</X><Y>0.9919698969818211</Y><Z>1.9294548321403524</Z></Vector3><CoordinateFrame name="CFrame"><X>18</X><Y>0.5</Y><Z>23</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>1.3638026295487922</X><Y>0.8365065934059726</Y><Z>1.4397684173590226</Z></Vector3><CoordinateFrame name="CFrame"><X>28</X><Y>0.5</Y><Z>8</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>2.8953962515034384</X><Y>0.9408169905801931</Y><Z>2.602746730175461</Z></Vector3><CoordinateFrame name="CFrame"><X>35</X><Y>0.5</Y><Z>-38</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>2.5898918957804122</X><Y>0.6509846428633932</Y><Z>1.4951114597779078</Z></Vector3><CoordinateFrame name="CFrame"><X>-20</X><Y>0.5</Y><Z>-8</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>2.9969902716064794</X><Y>0.6525196366635311</Y><Z>1.0478191364930134</Z></Vector3><CoordinateFrame name="CFrame"><X>-28</X><Y>0.5</Y><Z>8</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>2.278822125764301</X><Y>0.4606599572965687</Y><Z>2.0544741526574155</Z></Vector3><CoordinateFrame name="CFrame"><X>-1</X><Y>0.5</Y><Z>-3</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>2.254008700754297</X><Y>0.4838746538696564</Y><Z>2.8933548248534047</Z></Vector3><CoordinateFrame name="CFrame"><X>19</X><Y>0.5</Y><Z>24</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>1.582642758144198</X><Y>0.9112187209144043</Y><Z>1.5566100825369529</Z></Vector3><CoordinateFrame name="CFrame"><X>-22</X><Y>0.5</Y><Z>19</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>2.4093915789143283</X><Y>0.4498486542240181</Y><Z>1.5700412619260027</Z></Vector3><CoordinateFrame name="CFrame"><X>23</X><Y>0.5</Y><Z>18</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>2.366589844281853</X><Y>0.7858733066848045</Y><Z>1.2634636246863091</Z></Vector3><CoordinateFrame name="CFrame"><X>-10</X><Y>0.5</Y><Z>-35</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>1.2767567819540364</X><Y>0.44018794152658647</Y><Z>1.943541437081658</Z></Vector3><CoordinateFrame name="CFrame"><X>-8</X><Y>0.5</Y><Z>15</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>2.1404083762278954</X><Y>0.8031604278382201</Y><Z>2.8728262627420973</Z></Vector3><CoordinateFrame name="CFrame"><X>-35</X><Y>0.5</Y><Z>33</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Debris</string><Vector3 name="Size"><X>1.8353116129513904</X><Y>0.7119048093632647</Y><Z>2.8019231469143975</Z></Vector3><CoordinateFrame name="CFrame"><X>-9</X><Y>0.5</Y><Z>-33</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.22</R><G>0.23</G><B>0.24</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">EmergencyLamp</string><Vector3 name="Size"><X>1</X><Y>1</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>-48</X><Y>5</Y><Z>-48</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.9</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">6</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">EmergencyLamp</string><Vector3 name="Size"><X>1</X><Y>1</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>48</X><Y>5</Y><Z>-48</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.9</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">6</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">EmergencyLamp</string><Vector3 name="Size"><X>1</X><Y>1</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>-48</X><Y>5</Y><Z>48</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.9</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">6</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">EmergencyLamp</string><Vector3 name="Size"><X>1</X><Y>1</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>48</X><Y>5</Y><Z>48</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.9</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">6</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">EmergencyLamp</string><Vector3 name="Size"><X>1</X><Y>1</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>0</X><Y>5</Y><Z>65</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.9</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">6</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">EmergencyLamp</string><Vector3 name="Size"><X>1</X><Y>1</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>0</X><Y>5</Y><Z>-65</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.9</R><G>0.12</G><B>0.08</B></Color3><bool name="Anchored">true</bool><token name="Material">6</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>-60</X><Y>3</Y><Z>-60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>-60</X><Y>3</Y><Z>60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>-48</X><Y>3</Y><Z>-60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>-48</X><Y>3</Y><Z>60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>-36</X><Y>3</Y><Z>-60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>-36</X><Y>3</Y><Z>60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>-24</X><Y>3</Y><Z>-60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>-24</X><Y>3</Y><Z>60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>-12</X><Y>3</Y><Z>-60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>-12</X><Y>3</Y><Z>60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>0</X><Y>3</Y><Z>-60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>0</X><Y>3</Y><Z>60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>12</X><Y>3</Y><Z>-60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>12</X><Y>3</Y><Z>60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>24</X><Y>3</Y><Z>-60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>24</X><Y>3</Y><Z>60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>36</X><Y>3</Y><Z>-60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>36</X><Y>3</Y><Z>60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>48</X><Y>3</Y><Z>-60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>48</X><Y>3</Y><Z>60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>60</X><Y>3</Y><Z>-60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>10</X><Y>6</Y><Z>1</Z></Vector3><CoordinateFrame name="CFrame"><X>60</X><Y>3</Y><Z>60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-60</X><Y>3</Y><Z>-60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>60</X><Y>3</Y><Z>-60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-60</X><Y>3</Y><Z>-48</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>60</X><Y>3</Y><Z>-48</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-60</X><Y>3</Y><Z>-36</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>60</X><Y>3</Y><Z>-36</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-60</X><Y>3</Y><Z>-24</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>60</X><Y>3</Y><Z>-24</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-60</X><Y>3</Y><Z>-12</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>60</X><Y>3</Y><Z>-12</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-60</X><Y>3</Y><Z>0</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>60</X><Y>3</Y><Z>0</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-60</X><Y>3</Y><Z>12</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>60</X><Y>3</Y><Z>12</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-60</X><Y>3</Y><Z>24</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>60</X><Y>3</Y><Z>24</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-60</X><Y>3</Y><Z>36</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>60</X><Y>3</Y><Z>36</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-60</X><Y>3</Y><Z>48</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>60</X><Y>3</Y><Z>48</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>-60</X><Y>3</Y><Z>60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">Fence</string><Vector3 name="Size"><X>1</X><Y>6</Y><Z>10</Z></Vector3><CoordinateFrame name="CFrame"><X>60</X><Y>3</Y><Z>60</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.16</R><G>0.18</G><B>0.19</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">SupplyTable</string><Vector3 name="Size"><X>10</X><Y>2</Y><Z>5</Z></Vector3><CoordinateFrame name="CFrame"><X>-24</X><Y>2</Y><Z>18</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.25</R><G>0.27</G><B>0.28</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">SupplyBox</string><Vector3 name="Size"><X>4</X><Y>3</Y><Z>4</Z></Vector3><CoordinateFrame name="CFrame"><X>-24</X><Y>4</Y><Z>18</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.35</R><G>0.2</G><B>0.1</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">SupplyTable</string><Vector3 name="Size"><X>10</X><Y>2</Y><Z>5</Z></Vector3><CoordinateFrame name="CFrame"><X>24</X><Y>2</Y><Z>18</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.25</R><G>0.27</G><B>0.28</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">SupplyBox</string><Vector3 name="Size"><X>4</X><Y>3</Y><Z>4</Z></Vector3><CoordinateFrame name="CFrame"><X>24</X><Y>4</Y><Z>18</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.35</R><G>0.2</G><B>0.1</B></Color3><bool name="Anchored">true</bool><token name="Material">1</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">LobbyAccent</string><Vector3 name="Size"><X>36</X><Y>1</Y><Z>36</Z></Vector3><CoordinateFrame name="CFrame"><X>0</X><Y>3</Y><Z>-90</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.22</G><B>0.25</B></Color3><bool name="Anchored">true</bool><token name="Material">6</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item><Item class="Part"><Properties><string name="Name">LobbyAccent</string><Vector3 name="Size"><X>28</X><Y>1</Y><Z>28</Z></Vector3><CoordinateFrame name="CFrame"><X>0</X><Y>3</Y><Z>-90</Z><R00>1</R00><R01>0</R01><R02>0</R02><R10>0</R10><R11>1</R11><R12>0</R12><R20>0</R20><R21>0</R21><R22>1</R22></CoordinateFrame><Color3 name="Color"><R>0.08</R><G>0.22</G><B>0.25</B></Color3><bool name="Anchored">true</bool><token name="Material">6</token><float name="Transparency">0</float><bool name="CanCollide">true</bool></Properties></Item></Item>
+  <Item class="ServerScriptService">
+    <Properties>
+      <string name="Name">ServerScriptService</string>
+    </Properties>
+    <Item class="Script">
+      <Properties>
+        <string name="Name">NightGameServer</string>
+        <ProtectedString name="Source">local Players=game:GetService("Players")
+local RunService=game:GetService("RunService")
+local Workspace=game:GetService("Workspace")
+local keysNeeded=5
+local collected={}
+local safe=Workspace:WaitForChild("SafeZone")
+local escape=Workspace:WaitForChild("EscapePlatform")
+local monsterSpawn=Workspace:WaitForChild("MonsterSpawn")
+local monster=Instance.new("Model"); monster.Name="NightStalker"; monster.Parent=Workspace
+local body=Instance.new("Part"); body.Name="HumanoidRootPart"; body.Size=Vector3.new(5,8,5); body.Anchored=true; body.CanCollide=false; body.Material=Enum.Material.Slate; body.Color=Color3.fromRGB(15,15,20); body.Parent=monster
+local face=Instance.new("Part"); face.Name="Eyes"; face.Size=Vector3.new(2,1,0.3); face.Anchored=true; face.CanCollide=false; face.Material=Enum.Material.Neon; face.Color=Color3.fromRGB(255,40,40); face.Parent=monster
+monster.PrimaryPart=body
+local spawnPos=monsterSpawn.Position+Vector3.new(0,5,0); body.Position=spawnPos; face.Position=spawnPos+Vector3.new(0,2,-2.5)
+local activeTarget=nil
+local safePlayers={}
+local function countKeys(plr) return collected[plr] or 0 end
+local function updateStats(plr) local ls=plr:FindFirstChild("leaderstats"); if ls then local v=ls:FindFirstChild("Keys"); if v then v.Value=countKeys(plr) end end end
+Players.PlayerAdded:Connect(function(plr) collected[plr]=0; local ls=Instance.new("Folder",plr); ls.Name="leaderstats"; local v=Instance.new("IntValue",ls); v.Name="Keys"; v.Value=0; local wins=Instance.new("IntValue",ls); wins.Name="Escapes"; wins.Value=0 end)
+Players.PlayerRemoving:Connect(function(plr) collected[plr]=nil; safePlayers[plr]=nil end)
+for _,key in ipairs(Workspace:GetChildren()) do if key.Name:match("KeyPickup") then local prompt=key:FindFirstChildOfClass("ProximityPrompt"); if prompt then prompt.Triggered:Connect(function(plr) if key:GetAttribute("Taken") then return end; key:SetAttribute("Taken",true); collected[plr]=(collected[plr] or 0)+1; updateStats(plr); key.Transparency=1; prompt.Enabled=false; key.CanCollide=false end) end end end
+local function inside(part, pos) local localPos=part.CFrame:PointToObjectSpace(pos); local half=part.Size/2; return math.abs(localPos.X)&lt;=half.X and math.abs(localPos.Y)&lt;=half.Y+5 and math.abs(localPos.Z)&lt;=half.Z end
+safe.Touched:Connect(function(hit) local plr=Players:GetPlayerFromCharacter(hit.Parent); if plr then safePlayers[plr]=true end end)
+safe.TouchEnded:Connect(function(hit) local plr=Players:GetPlayerFromCharacter(hit.Parent); if plr then safePlayers[plr]=nil end end)
+escape.Touched:Connect(function(hit) local plr=Players:GetPlayerFromCharacter(hit.Parent); if plr and countKeys(plr)&gt;=keysNeeded then local ls=plr:FindFirstChild("leaderstats"); if ls and ls:FindFirstChild("Escapes") then ls.Escapes.Value+=1 end; collected[plr]=0; updateStats(plr); if plr.Character then plr.Character:PivotTo(Workspace.LobbySpawn.CFrame+Vector3.new(0,5,0)) end end end)
+local chaseSpeed=22; local detection=85; local lastHit={}
+while task.wait(.12) do local nearest,dist=nil,detection; for _,plr in ipairs(Players:GetPlayers()) do local char=plr.Character; local hrp=char and char:FindFirstChild("HumanoidRootPart"); local hum=char and char:FindFirstChildOfClass("Humanoid"); if hrp and hum and hum.Health&gt;0 and not safePlayers[plr] then local d=(hrp.Position-body.Position).Magnitude; if d&lt;dist then nearest=hrp; dist=d end end end
+if nearest then local pos=body.Position; local target=nearest.Position; local flat=Vector3.new(target.X,pos.Y,target.Z); local delta=flat-pos; if delta.Magnitude&gt;2 then body.Position=pos+delta.Unit*math.min(chaseSpeed*.12,delta.Magnitude); face.Position=body.Position+Vector3.new(0,2,-2.5); body.CFrame=CFrame.lookAt(body.Position,flat); face.CFrame=body.CFrame*CFrame.new(0,2,-2.5) end; local plr=Players:GetPlayerFromCharacter(nearest.Parent); if plr and dist&lt;5 and not lastHit[plr] then lastHit[plr]=true; local hum=nearest.Parent:FindFirstChildOfClass("Humanoid"); if hum then hum.Health=0 end; task.delay(2,function() lastHit[plr]=nil end) end
+else body.Position=body.Position+(spawnPos-body.Position).Unit*math.min(1.5,(spawnPos-body.Position).Magnitude); face.Position=body.Position+Vector3.new(0,2,-2.5) end end
+</ProtectedString>
+      </Properties>
+    </Item>
+  </Item>
+  <Item class="StarterPlayer">
+    <Properties>
+      <string name="Name">StarterPlayer</string>
+    </Properties>
+    <Item class="StarterPlayerScripts">
+      <Properties>
+        <string name="Name">StarterPlayerScripts</string>
+      </Properties>
+      <Item class="LocalScript">
+        <Properties>
+          <string name="Name">EscapeNightUI</string>
+          <ProtectedString name="Source">local Players=game:GetService("Players")
+local TweenService=game:GetService("TweenService")
+local p=Players.LocalPlayer
+local gui=Instance.new("ScreenGui"); gui.Name="EscapeNightUI"; gui.ResetOnSpawn=false; gui.IgnoreGuiInset=false; gui.Parent=p:WaitForChild("PlayerGui")
+local panel=Instance.new("Frame",gui); panel.Size=UDim2.new(0,340,0,116); panel.Position=UDim2.new(0,16,0,16); panel.BackgroundColor3=Color3.fromRGB(13,20,25); panel.BackgroundTransparency=.08; panel.BorderSizePixel=0
+Instance.new("UICorner",panel).CornerRadius=UDim.new(0,14); local stroke=Instance.new("UIStroke",panel); stroke.Color=Color3.fromRGB(60,220,180); stroke.Transparency=.35; stroke.Thickness=1.5
+local title=Instance.new("TextLabel",panel); title.Size=UDim2.new(1,-24,0,34); title.Position=UDim2.new(0,12,0,8); title.BackgroundTransparency=1; title.Text="◈  ESCAPE THE NIGHT"; title.Font=Enum.Font.GothamBold; title.TextSize=18; title.TextColor3=Color3.fromRGB(100,245,205); title.TextXAlignment=Enum.TextXAlignment.Left
+local sub=Instance.new("TextLabel",panel); sub.Size=UDim2.new(1,-24,0,52); sub.Position=UDim2.new(0,12,0,48); sub.BackgroundTransparency=1; sub.Text="OBJECTIVE  •  Find 5 keys\nAvoid the Stalker and escape."; sub.Font=Enum.Font.GothamMedium; sub.TextSize=15; sub.TextColor3=Color3.fromRGB(220,230,235); sub.TextXAlignment=Enum.TextXAlignment.Left; sub.TextYAlignment=Enum.TextYAlignment.Top
+local status=Instance.new("TextLabel",gui); status.Size=UDim2.new(0,320,0,42); status.Position=UDim2.new(.5,-160,1,-70); status.BackgroundColor3=Color3.fromRGB(12,18,24); status.BackgroundTransparency=.08; status.Text="Find the keys • Stay out of sight"; status.TextColor3=Color3.fromRGB(240,245,245); status.Font=Enum.Font.GothamBold; status.TextSize=16; status.Parent=gui; Instance.new("UICorner",status).CornerRadius=UDim.new(0,10); local st=Instance.new("UIStroke",status); st.Color=Color3.fromRGB(60,220,180); st.Transparency=.5
+local ls=p:WaitForChild("leaderstats",10); if ls then local keys=ls:WaitForChild("Keys",10); if keys then keys:GetPropertyChangedSignal("Value"):Connect(function() status.Text="Keys collected: "..keys.Value.." / 5"; TweenService:Create(status,TweenInfo.new(.2),{Size=UDim2.new(0,330,0,46)}):Play(); task.delay(.2,function() TweenService:Create(status,TweenInfo.new(.2),{Size=UDim2.new(0,320,0,42)}):Play() end) end) end end
+local function fit() panel.Size=UDim2.new(0,math.min(340,gui.AbsoluteSize.X-24),0,116) end; gui:GetPropertyChangedSignal("AbsoluteSize"):Connect(fit)
+</ProtectedString>
+        </Properties>
+      </Item>
+    </Item>
+  </Item>
+  <Item class="Folder">
+    <Properties>
+      <string name="Name">Lighting</string>
+    </Properties>
+  </Item>
+</roblox>

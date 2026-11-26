@@ -1,0 +1,184 @@
+<roblox version="4"><Item class="DataModel" referent="RBX0000"><Properties><string name="Name">ZANSKYY FEED THE ANIMALS V2</string></Properties><Item class="ServerScriptService" referent="RBX0004"><Properties></Properties><Item class="Script" referent="RBX0002"><Properties><string name="Name">ZanskyyFeedAnimalsServer</string><ProtectedString name="Source">-- ZANSKYY FEED THE ANIMALS V2 - World, animals, collection, throwing, shop and sell
+local Players=game:GetService("Players")
+local ReplicatedStorage=game:GetService("ReplicatedStorage")
+local TweenService=game:GetService("TweenService")
+local Debris=game:GetService("Debris")
+local DataStoreService=game:GetService("DataStoreService")
+local store=DataStoreService:GetDataStore("ZanskyyFeedAnimalsV2")
+local remote=ReplicatedStorage:FindFirstChild("FeedAnimalsV2") or Instance.new("RemoteEvent")
+remote.Name="FeedAnimalsV2";remote.Parent=ReplicatedStorage
+local worldFolder=workspace:FindFirstChild("ZanskyyWorld") or Instance.new("Folder",workspace);worldFolder.Name="ZanskyyWorld";worldFolder:ClearAllChildren()
+local animals={}
+local function part(parent,name,size,pos,color,material,shape)
+ local p=Instance.new("Part");p.Name=name;p.Size=size;p.Position=pos;p.Anchored=true;p.CanCollide=true;p.Color=color;p.Material=material or Enum.Material.SmoothPlastic;p.TopSurface=Enum.SurfaceType.Smooth;p.BottomSurface=Enum.SurfaceType.Smooth
+ if shape then p.Shape=shape end;p.Parent=parent;return p
+end
+local function neon(parent,name,size,pos,color)
+ local p=part(parent,name,size,pos,color,Enum.Material.Neon);p.CanCollide=false;return p
+end
+local function billboard(parent,title,sub)
+ local g=Instance.new("BillboardGui");g.Size=UDim2.fromOffset(220,65);g.StudsOffset=Vector3.new(0,5.5,0);g.AlwaysOnTop=true;g.MaxDistance=100;g.Parent=parent
+ local f=Instance.new("Frame");f.Size=UDim2.fromScale(1,1);f.BackgroundColor3=Color3.fromRGB(24,35,49);f.BackgroundTransparency=.12;f.Parent=g;Instance.new("UICorner",f).CornerRadius=UDim.new(0,14)
+ local s=Instance.new("UIStroke",f);s.Color=Color3.fromRGB(255,210,110);s.Thickness=2
+ local t=Instance.new("TextLabel");t.Size=UDim2.new(1,-10,.55,0);t.Position=UDim2.fromOffset(5,3);t.BackgroundTransparency=1;t.Text=title;t.TextColor3=Color3.fromRGB(255,235,155);t.Font=Enum.Font.GothamBlack;t.TextScaled=true;t.Parent=f
+ local d=Instance.new("TextLabel");d.Size=UDim2.new(1,-10,.35,0);d.Position=UDim2.new(0,5,.6,0);d.BackgroundTransparency=1;d.Text=sub;d.TextColor3=Color3.new(1,1,1);d.Font=Enum.Font.GothamBold;d.TextScaled=true;d.Parent=f
+ return g
+end
+local function sign(pos,title,sub,color)
+ local board=part(worldFolder,"SignBoard",Vector3.new(16,7,1),pos,color,Enum.Material.Wood)
+ local gui=Instance.new("SurfaceGui",board);gui.Face=Enum.NormalId.Front;gui.CanvasSize=Vector2.new(800,400)
+ local label=Instance.new("TextLabel",gui);label.Size=UDim2.fromScale(1,1);label.BackgroundTransparency=1;label.Text=title.."\n"..sub;label.TextColor3=Color3.new(1,1,1);label.TextStrokeTransparency=.2;label.Font=Enum.Font.GothamBlack;label.TextScaled=true
+end
+-- World base and walkways
+part(worldFolder,"Island",Vector3.new(220,12,220),Vector3.new(0,-6,0),Color3.fromRGB(65,150,88),Enum.Material.Grass)
+part(worldFolder,"CentralPath",Vector3.new(20,.4,150),Vector3.new(0,.2,0),Color3.fromRGB(210,180,125),Enum.Material.Sand)
+part(worldFolder,"CrossPath",Vector3.new(150,.4,20),Vector3.new(0,.2,0),Color3.fromRGB(210,180,125),Enum.Material.Sand)
+part(worldFolder,"ShopPad",Vector3.new(28,1,24),Vector3.new(0,.6,-65),Color3.fromRGB(255,185,85),Enum.Material.Wood)
+part(worldFolder,"SellPad",Vector3.new(28,1,24),Vector3.new(0,.6,65),Color3.fromRGB(70,190,155),Enum.Material.Wood)
+local spawn=Instance.new("SpawnLocation");spawn.Name="SpawnLocation";spawn.Size=Vector3.new(14,1,14);spawn.Position=Vector3.new(0,1,0);spawn.Anchored=true;spawn.Neutral=true;spawn.Color=Color3.fromRGB(90,200,255);spawn.Material=Enum.Material.Neon;spawn.Parent=worldFolder
+-- Fence sections
+for x=-90,90,10 do for _,z in ipairs({-95,95}) do local p=part(worldFolder,"Fence",Vector3.new(8,5,1),Vector3.new(x,2.5,z),Color3.fromRGB(150,105,70),Enum.Material.Wood);end end
+for z=-90,90,10 do for _,x in ipairs({-95,95}) do part(worldFolder,"Fence",Vector3.new(1,5,8),Vector3.new(x,2.5,z),Color3.fromRGB(150,105,70),Enum.Material.Wood);end end
+-- decorative trees, fruit pickup nodes
+local fruitColors={Apple=Color3.fromRGB(240,75,70),Banana=Color3.fromRGB(255,220,75),Berry=Color3.fromRGB(180,70,230)}
+local function pickupFruit(pos,fruitType)
+ local fruit=part(worldFolder,"FruitPickup_"..fruitType,Vector3.new(2,2,2),pos,fruitColors[fruitType],Enum.Material.SmoothPlastic,Enum.PartType.Ball)
+ fruit.CanCollide=false;fruit:SetAttribute("FruitPickup",true);fruit:SetAttribute("FruitType",fruitType)
+ local prompt=Instance.new("ProximityPrompt",fruit);prompt.ActionText="Collect "..fruitType;prompt.ObjectText="Fruit";prompt.HoldDuration=.15;prompt.MaxActivationDistance=10
+ prompt.Triggered:Connect(function(plr) if fruit.Parent then local inv=plr:FindFirstChild("FruitInventory");if inv then local v=inv:FindFirstChild(fruitType);if v then v.Value+=1 end end;fruit:Destroy() end end)
+ Debris:AddItem(fruit,120)
+end
+local function tree(x,z)
+ part(worldFolder,"TreeTrunk",Vector3.new(3,12,3),Vector3.new(x,6,z),Color3.fromRGB(125,80,50),Enum.Material.Wood)
+ local crown=part(worldFolder,"TreeCanopy",Vector3.new(14,14,14),Vector3.new(x,14,z),Color3.fromRGB(70,180,80),Enum.Material.Grass,Enum.PartType.Ball)
+ for i=1,3 do pickupFruit(Vector3.new(x+math.random(-6,6),3,z+math.random(-6,6)),({"Apple","Banana","Berry"})[math.random(1,3)]) end
+end
+for _,xy in ipairs({{-75,-70},{75,-70},{-75,70},{75,70},{-80,0},{80,0},{-40,-85},{40,85}}) do tree(xy[1],xy[2]) end
+-- Flower decorations
+for i=1,28 do local x=math.random(-85,85);local z=math.random(-85,85);if math.abs(x)&gt;15 or math.abs(z)&gt;15 then local f=part(worldFolder,"Flower",Vector3.new(1.2,1.2,1.2),Vector3.new(x,1,z),Color3.fromRGB(math.random(120,255),math.random(80,255),math.random(100,255)),Enum.Material.Neon,Enum.PartType.Ball);f.CanCollide=false end end
+-- Animals built as stylized assemblies, anchored body parts, clickable feed radius
+local function makeAnimal(name,x,z,color,kind,price)
+ local model=Instance.new("Model");model.Name=name;model.Parent=worldFolder
+ local body=part(model,"Body",Vector3.new(7,5,5),Vector3.new(x,3,z),color,Enum.Material.SmoothPlastic,Enum.PartType.Ball)
+ local head=part(model,"Head",Vector3.new(4,4,4),Vector3.new(x,5,z-4),color,Enum.Material.SmoothPlastic,Enum.PartType.Ball)
+ local muzzle=part(model,"Muzzle",Vector3.new(2.3,1.5,1.2),Vector3.new(x,4,z-6),Color3.fromRGB(255,220,210),Enum.Material.SmoothPlastic,Enum.PartType.Ball)
+ for _,dx in ipairs({-1,1}) do
+  local eye=part(model,"Eye",Vector3.new(.55,.55,.55),Vector3.new(x+dx,6,z-5.65),Color3.fromRGB(25,25,25),Enum.Material.SmoothPlastic,Enum.PartType.Ball)
+  local ear=part(model,"Ear",Vector3.new(1.4,3,1.2),Vector3.new(x+dx*1.3,7.4,z-3.4),color,Enum.Material.SmoothPlastic,Enum.PartType.Ball)
+ end
+ for _,dx in ipairs({-2.2,2.2}) do for _,dz in ipairs({-1.4,1.4}) do part(model,"Leg",Vector3.new(1.5,2,1.5),Vector3.new(x+dx,1,z+dz),color,Enum.Material.SmoothPlastic,Enum.PartType.Ball) end end
+ model.PrimaryPart=body;model:SetAttribute("AnimalKind",kind);model:SetAttribute("Reward",price)
+ billboard(head,name,"Feed with fruit!")
+ table.insert(animals,model)
+end
+makeAnimal("Bunny",-28,22,Color3.fromRGB(245,215,225),"Bunny",15)
+makeAnimal("Cow",28,22,Color3.fromRGB(245,245,245),"Cow",25)
+makeAnimal("Fox",-28,-22,Color3.fromRGB(255,150,75),"Fox",35)
+makeAnimal("Bear",28,-22,Color3.fromRGB(135,90,60),"Bear",45)
+sign(Vector3.new(0,9,-65),"FRUIT MARKET","Upgrade your throw!",Color3.fromRGB(240,150,55))
+sign(Vector3.new(0,9,65),"SELL STATION","Exchange fruit for coins",Color3.fromRGB(55,165,135))
+-- shop prompt
+local shopPrompt=Instance.new("ProximityPrompt");shopPrompt.ActionText="Upgrade";shopPrompt.ObjectText="Fruit Market";shopPrompt.HoldDuration=.2;shopPrompt.MaxActivationDistance=12;shopPrompt.Parent=worldFolder.ShopPad
+shopPrompt.Triggered:Connect(function(p) remote:FireClient(p,"OpenShop") end)
+local sellPrompt=Instance.new("ProximityPrompt");sellPrompt.ActionText="Sell fruit";sellPrompt.ObjectText="Sell Station";sellPrompt.HoldDuration=.2;sellPrompt.MaxActivationDistance=12;sellPrompt.Parent=worldFolder.SellPad
+sellPrompt.Triggered:Connect(function(p) remote:FireClient(p,"SellPrompt") end)
+local function stats(p)
+ local leader=Instance.new("Folder");leader.Name="leaderstats";leader.Parent=p
+ local coins=Instance.new("IntValue");coins.Name="Coins";coins.Parent=leader
+ local fruit=Instance.new("Folder");fruit.Name="FruitInventory";fruit.Parent=p
+ for _,f in ipairs({"Apple","Banana","Berry"}) do local v=Instance.new("IntValue");v.Name=f;v.Value=0;v.Parent=fruit end
+ p:SetAttribute("ThrowRange",35);p:SetAttribute("CoinBonus",0)
+end
+local function save(p)
+ local ls=p:FindFirstChild("leaderstats");local inv=p:FindFirstChild("FruitInventory");if not ls or not inv then return end
+ local data={Coins=ls.Coins.Value,Apple=inv.Apple.Value,Banana=inv.Banana.Value,Berry=inv.Berry.Value,Range=p:GetAttribute("ThrowRange"),Bonus=p:GetAttribute("CoinBonus")}
+ pcall(function()store:SetAsync("p_"..p.UserId,data)end)
+end
+Players.PlayerAdded:Connect(function(p)
+ stats(p)
+ local ok,data=pcall(function()return store:GetAsync("p_"..p.UserId)end)
+ if ok and data then p.leaderstats.Coins.Value=data.Coins or 0;p.FruitInventory.Apple.Value=data.Apple or 0;p.FruitInventory.Banana.Value=data.Banana or 0;p.FruitInventory.Berry.Value=data.Berry or 0;p:SetAttribute("ThrowRange",data.Range or 35);p:SetAttribute("CoinBonus",data.Bonus or 0)end
+end)
+Players.PlayerRemoving:Connect(save)
+game:BindToClose(function()for _,p in ipairs(Players:GetPlayers())do save(p)end end)
+local function closestAnimal(target)
+ local best,dist=nil,math.huge
+ for _,m in ipairs(animals)do if m.Parent and m.PrimaryPart then local d=(m.PrimaryPart.Position-target).Magnitude;if d&lt;dist then best,dist=m,d end end end
+ if dist&lt;=22 then return best end
+end
+local cooldown={}
+remote.OnServerEvent:Connect(function(p,action,arg)
+ if action=="Throw" then
+  if cooldown[p] then return end;cooldown[p]=true;task.delay(.55,function()cooldown[p]=nil end)
+  local ch=p.Character;local root=ch and ch:FindFirstChild("HumanoidRootPart");if not root then return end
+  local inv=p:FindFirstChild("FruitInventory");if not inv then return end
+  local chosen=arg;if not inv:FindFirstChild(chosen) or inv[chosen].Value&lt;=0 then remote:FireClient(p,"Notice","That fruit is not in your inventory.");return end
+  inv[chosen].Value-=1
+  local start=root.Position+root.CFrame.LookVector*3+Vector3.new(0,2,0);local finish=start+root.CFrame.LookVector*(p:GetAttribute("ThrowRange") or 35)+Vector3.new(0,-4,0)
+  local orb=part(worldFolder,"ThrownFruit",Vector3.new(1.5,1.5,1.5),start,fruitColors[chosen],Enum.Material.Neon,Enum.PartType.Ball);orb.CanCollide=false
+  local tween=TweenService:Create(orb,TweenInfo.new(.45,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),{Position=finish});tween:Play()
+  tween.Completed:Connect(function()
+   local a=closestAnimal(finish);if a then local coin=a:GetAttribute("Reward") or 10;local ls=p:FindFirstChild("leaderstats");if ls then ls.Coins.Value+=coin+(p:GetAttribute("CoinBonus") or 0)end
+    remote:FireClient(p,"Notice","Great throw! +"..coin.." coins");local puff=part(worldFolder,"FeedSpark",Vector3.new(3,3,3),finish,Color3.fromRGB(255,225,110),Enum.Material.Neon,Enum.PartType.Ball);puff.Transparency=.4;puff.CanCollide=false;Debris:AddItem(puff,.4)
+   else remote:FireClient(p,"Notice","Aim toward an animal!") end;orb:Destroy()
+  end)
+ elseif action=="Sell" then
+  local inv=p:FindFirstChild("FruitInventory");local ls=p:FindFirstChild("leaderstats");if not inv or not ls then return end
+  local count=inv.Apple.Value+inv.Banana.Value+inv.Berry.Value;if count==0 then remote:FireClient(p,"Notice","Your fruit bag is empty.");return end
+  ls.Coins.Value+=count*8;inv.Apple.Value=0;inv.Banana.Value=0;inv.Berry.Value=0;remote:FireClient(p,"Notice","Sold "..count.." fruit for "..count*8.." coins!")
+ elseif action=="Upgrade" then
+  local ls=p:FindFirstChild("leaderstats");if not ls then return end;local range=p:GetAttribute("ThrowRange") or 35;local price=100+((range-35)*15)
+  if ls.Coins.Value&lt;price then remote:FireClient(p,"Notice","Need "..price.." coins for upgrade.");return end
+  ls.Coins.Value-=price;p:SetAttribute("ThrowRange",range+10);p:SetAttribute("CoinBonus",(p:GetAttribute("CoinBonus")or 0)+5);remote:FireClient(p,"Notice","Upgrade complete! Throw range increased.")
+ end
+end)
+</ProtectedString></Properties></Item></Item><Item class="StarterPlayer" referent="RBX0005"><Properties></Properties><Item class="StarterPlayerScripts" referent="RBX0006"><Properties></Properties><Item class="LocalScript" referent="RBX0003"><Properties><string name="Name">ZanskyyFeedAnimalsClient</string><ProtectedString name="Source">-- ZANSKYY FEED THE ANIMALS V2 - Modern mobile UI
+local Players=game:GetService("Players");local ReplicatedStorage=game:GetService("ReplicatedStorage")
+local p=Players.LocalPlayer;local remote=ReplicatedStorage:WaitForChild("FeedAnimalsV2")
+local gui=Instance.new("ScreenGui");gui.Name="ZanskyyAnimalsHUD";gui.ResetOnSpawn=false;gui.IgnoreGuiInset=false;gui.Parent=p:WaitForChild("PlayerGui")
+local function corner(o,r) local c=Instance.new("UICorner");c.CornerRadius=UDim.new(0,r);c.Parent=o end
+local function stroke(o,color,thick) local s=Instance.new("UIStroke");s.Color=color;s.Thickness=thick or 1.5;s.Parent=o end
+local function mk(parent,cls,props) local o=Instance.new(cls);for k,v in pairs(props)do o[k]=v end;o.Parent=parent;return o end
+local dark=Color3.fromRGB(22,31,43);local gold=Color3.fromRGB(255,195,75);local green=Color3.fromRGB(70,190,135);local white=Color3.fromRGB(255,255,255)
+local top=mk(gui,"Frame",{Size=UDim2.fromOffset(250,100),Position=UDim2.fromOffset(14,14),BackgroundColor3=dark,BackgroundTransparency=.08});corner(top,18);stroke(top,gold,2)
+local title=mk(top,"TextLabel",{Size=UDim2.new(1,-14,0,28),Position=UDim2.fromOffset(7,5),BackgroundTransparency=1,Text="🌿 FEED THE ANIMALS",TextColor3=gold,Font=Enum.Font.GothamBlack,TextScaled=true})
+local stats=mk(top,"TextLabel",{Size=UDim2.new(1,-18,0,55),Position=UDim2.fromOffset(9,37),BackgroundTransparency=1,TextColor3=white,Text="Loading...",Font=Enum.Font.GothamBold,TextSize=17,TextXAlignment=Enum.TextXAlignment.Left,TextYAlignment=Enum.TextYAlignment.Top})
+local bag=mk(gui,"Frame",{Size=UDim2.fromOffset(220,158),Position=UDim2.new(0,14,1,-175),BackgroundColor3=dark,BackgroundTransparency=.08});corner(bag,16);stroke(bag,Color3.fromRGB(90,170,255),2)
+mk(bag,"TextLabel",{Size=UDim2.new(1,-10,0,28),Position=UDim2.fromOffset(5,5),BackgroundTransparency=1,Text="🍎 FRUIT BAG",TextColor3=Color3.fromRGB(120,200,255),Font=Enum.Font.GothamBlack,TextScaled=true})
+local invtext=mk(bag,"TextLabel",{Size=UDim2.new(1,-14,0,80),Position=UDim2.fromOffset(7,34),BackgroundTransparency=1,TextColor3=white,Font=Enum.Font.GothamBold,TextSize=18,TextXAlignment=Enum.TextXAlignment.Left,TextYAlignment=Enum.TextYAlignment.Top})
+local fruitBtns={}
+local function btn(parent,text,pos,size,color)
+ local b=mk(parent,"TextButton",{Position=pos,Size=size,BackgroundColor3=color,Text=text,TextColor3=white,TextScaled=true,Font=Enum.Font.GothamBlack,AutoButtonColor=true});corner(b,14);stroke(b,Color3.fromRGB(255,255,255),1);return b
+end
+fruitBtns.Apple=btn(bag,"🍎 Apple",UDim2.fromOffset(8,116),UDim2.fromOffset(65,35),Color3.fromRGB(220,75,75))
+fruitBtns.Banana=btn(bag,"🍌",UDim2.fromOffset(78,116),UDim2.fromOffset(65,35),Color3.fromRGB(230,180,55))
+fruitBtns.Berry=btn(bag,"🫐",UDim2.fromOffset(148,116),UDim2.fromOffset(65,35),Color3.fromRGB(145,90,220))
+local throw=btn(gui,"THROW 🍎",UDim2.new(1,-190,1,-120),UDim2.fromOffset(175,80),Color3.fromRGB(235,95,65));throw.Text="THROW";corner(throw,22)
+local sell=btn(gui,"SELL FRUIT",UDim2.new(1,-190,1,-210),UDim2.fromOffset(175,58),green)
+local shop=btn(gui,"UPGRADE ✨",UDim2.new(1,-190,1,-275),UDim2.fromOffset(175,58),Color3.fromRGB(235,170,65))
+local pop=mk(gui,"Frame",{Size=UDim2.fromOffset(320,220),Position=UDim2.new(.5,-160,.5,-110),BackgroundColor3=dark,Visible=false});corner(pop,22);stroke(pop,gold,2)
+mk(pop,"TextLabel",{Size=UDim2.new(1,-20,0,45),Position=UDim2.fromOffset(10,5),BackgroundTransparency=1,Text="FRUIT MARKET",TextColor3=gold,Font=Enum.Font.GothamBlack,TextScaled=true})
+mk(pop,"TextLabel",{Size=UDim2.new(1,-24,0,95),Position=UDim2.fromOffset(12,50),BackgroundTransparency=1,Text="Upgrade throwing range +10 studs\\nBonus reward +5 coins\\nUpgrade cost starts at 100 coins",TextColor3=white,Font=Enum.Font.GothamBold,TextSize=18})
+local buy=btn(pop,"BUY UPGRADE",UDim2.fromOffset(12,155),UDim2.fromOffset(190,50),Color3.fromRGB(235,170,65));local close=btn(pop,"✕",UDim2.new(1,-60,0,8),UDim2.fromOffset(48,42),Color3.fromRGB(190,65,65))
+local notice=mk(gui,"TextLabel",{Size=UDim2.fromOffset(320,48),Position=UDim2.new(.5,-160,0,14),BackgroundColor3=dark,BackgroundTransparency=.08,Text="",TextColor3=white,TextScaled=true,Font=Enum.Font.GothamBlack,Visible=false});corner(notice,14);stroke(notice,gold,2)
+local selected="Apple"
+local function refresh()
+ local ls=p:FindFirstChild("leaderstats");local inv=p:FindFirstChild("FruitInventory");if not ls or not inv then return end
+ stats.Text="💰 Coins: "..ls.Coins.Value.."     ✨ +"..(p:GetAttribute("CoinBonus")or 0)
+ invtext.Text="🍎 Apple: "..inv.Apple.Value.."\\n🍌 Banana: "..inv.Banana.Value.."\\n🫐 Berry: "..inv.Berry.Value
+ for name,b in pairs(fruitBtns)do b.BackgroundTransparency=(selected==name and 0 or .25)end
+ throw.Text="THROW "..selected
+end
+task.spawn(function()repeat task.wait()until p:FindFirstChild("leaderstats") and p:FindFirstChild("FruitInventory")
+ p.leaderstats.Coins:GetPropertyChangedSignal("Value"):Connect(refresh);for _,v in ipairs(p.FruitInventory:GetChildren())do v:GetPropertyChangedSignal("Value"):Connect(refresh)end
+ p:GetAttributeChangedSignal("CoinBonus"):Connect(refresh);refresh()
+end)
+for name,b in pairs(fruitBtns)do b.Activated:Connect(function()selected=name;refresh()end)end
+throw.Activated:Connect(function()remote:FireServer("Throw",selected)end);sell.Activated:Connect(function()remote:FireServer("Sell")end)
+shop.Activated:Connect(function()pop.Visible=true end);close.Activated:Connect(function()pop.Visible=false end);buy.Activated:Connect(function()remote:FireServer("Upgrade");pop.Visible=false end)
+remote.OnClientEvent:Connect(function(action,msg)
+ if action=="OpenShop" then pop.Visible=true
+ elseif action=="SellPrompt" then remote:FireServer("Sell")
+ elseif action=="Notice" then notice.Text=msg;notice.Visible=true;task.delay(2.6,function()notice.Visible=false end)end
+end)
+</ProtectedString></Properties></Item></Item></Item></Item></roblox>

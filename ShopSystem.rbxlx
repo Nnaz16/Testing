@@ -1,0 +1,399 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4"><Item class="Workspace" referent="RBX1"><Properties><string name="Name">Workspace</string></Properties></Item><Item class="ReplicatedStorage" referent="RBX3"><Properties><string name="Name">ReplicatedStorage</string></Properties><Item class="ModuleScript" referent="RBX2"><Properties><string name="Name">ShopConfig</string><ProtectedString name="Source"><![CDATA[-- TIPE: ModuleScript
+-- LOKASI: ReplicatedStorage
+-- NAMA: ShopConfig
+
+local ShopConfig = {}
+
+-- Coins awal untuk pemain baru
+ShopConfig.StartingCoins = 500
+
+-- Id HARUS sama persis dengan nama Tool di ServerStorage/ShopItems
+ShopConfig.Items = {
+	{ Id = "IronSword",  Name = "Pedang Besi",  Price = 100, Description = "Pedang dasar yang kokoh." },
+	{ Id = "FireSword",  Name = "Pedang Api",   Price = 350, Description = "Pedang dengan aura api." },
+	{ Id = "Bow",        Name = "Busur",        Price = 200, Description = "Serang dari jarak jauh." },
+	{ Id = "SpeedCoil",  Name = "Speed Coil",   Price = 450, Description = "Lari lebih cepat." },
+}
+
+function ShopConfig.GetItem(itemId)
+	for _, item in ipairs(ShopConfig.Items) do
+		if item.Id == itemId then
+			return item
+		end
+	end
+	return nil
+end
+
+return ShopConfig
+]]></ProtectedString></Properties></Item></Item><Item class="ServerScriptService" referent="RBX5"><Properties><string name="Name">ServerScriptService</string></Properties><Item class="Script" referent="RBX4"><Properties><string name="Name">ShopServer</string><ProtectedString name="Source"><![CDATA[-- TIPE: Script (biasa, bukan LocalScript)
+-- LOKASI: ServerScriptService
+-- NAMA: ShopServer
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ServerStorage = game:GetService("ServerStorage")
+local DataStoreService = game:GetService("DataStoreService")
+
+local ShopConfig = require(ReplicatedStorage:WaitForChild("ShopConfig"))
+local ItemsFolder = ServerStorage:WaitForChild("ShopItems")
+local store = DataStoreService:GetDataStore("ShopData_v1")
+
+-- Remote
+local remotes = Instance.new("Folder")
+remotes.Name = "ShopRemotes"
+remotes.Parent = ReplicatedStorage
+
+local purchaseFunc = Instance.new("RemoteFunction")
+purchaseFunc.Name = "PurchaseItem"
+purchaseFunc.Parent = remotes
+
+local getOwnedFunc = Instance.new("RemoteFunction")
+getOwnedFunc.Name = "GetOwned"
+getOwnedFunc.Parent = remotes
+
+local ownedEvent = Instance.new("RemoteEvent")
+ownedEvent.Name = "OwnedUpdated"
+ownedEvent.Parent = remotes
+
+local playerData = {}
+
+local function loadData(player)
+	local ok, result = pcall(function()
+		return store:GetAsync("Player_" .. player.UserId)
+	end)
+
+	if ok then
+		return result or { Coins = ShopConfig.StartingCoins, Owned = {} }
+	end
+
+	warn("Gagal memuat data " .. player.Name .. ": " .. tostring(result))
+	-- LoadFailed mencegah data lama tertimpa data kosong
+	return { Coins = ShopConfig.StartingCoins, Owned = {}, LoadFailed = true }
+end
+
+local function saveData(player)
+	local data = playerData[player]
+	if not data or data.LoadFailed then
+		return
+	end
+
+	local leaderstats = player:FindFirstChild("leaderstats")
+	if leaderstats and leaderstats:FindFirstChild("Coins") then
+		data.Coins = leaderstats.Coins.Value
+	end
+
+	local ok, err = pcall(function()
+		store:SetAsync("Player_" .. player.UserId, {
+			Coins = data.Coins,
+			Owned = data.Owned,
+		})
+	end)
+	if not ok then
+		warn("Gagal menyimpan data " .. player.Name .. ": " .. tostring(err))
+	end
+end
+
+local function giveItem(player, itemId)
+	local template = ItemsFolder:FindFirstChild(itemId)
+	if not template then
+		warn("Tool '" .. itemId .. "' tidak ada di ServerStorage/ShopItems")
+		return
+	end
+
+	local backpack = player:FindFirstChildOfClass("Backpack")
+	local character = player.Character
+	local alreadyHas = (backpack and backpack:FindFirstChild(itemId))
+		or (character and character:FindFirstChild(itemId))
+
+	if backpack and not alreadyHas then
+		template:Clone().Parent = backpack
+	end
+end
+
+local function onPlayerAdded(player)
+	local data = loadData(player)
+	playerData[player] = data
+
+	local leaderstats = Instance.new("Folder")
+	leaderstats.Name = "leaderstats"
+
+	local coins = Instance.new("IntValue")
+	coins.Name = "Coins"
+	coins.Value = data.Coins
+	coins.Parent = leaderstats
+	leaderstats.Parent = player
+
+	-- Berikan ulang item yang dimiliki setiap respawn
+	player.CharacterAdded:Connect(function()
+		player:WaitForChild("Backpack")
+		for itemId in pairs(data.Owned) do
+			giveItem(player, itemId)
+		end
+	end)
+end
+
+local function onPlayerRemoving(player)
+	saveData(player)
+	playerData[player] = nil
+end
+
+purchaseFunc.OnServerInvoke = function(player, itemId)
+	if typeof(itemId) ~= "string" then
+		return false, "Permintaan tidak valid"
+	end
+
+	local item = ShopConfig.GetItem(itemId)
+	local data = playerData[player]
+	if not item or not data then
+		return false, "Item tidak ditemukan"
+	end
+
+	if data.Owned[itemId] then
+		return false, "Kamu sudah memiliki item ini"
+	end
+
+	local coins = player:FindFirstChild("leaderstats") and player.leaderstats:FindFirstChild("Coins")
+	if not coins then
+		return false, "Data belum siap"
+	end
+
+	if coins.Value < item.Price then
+		return false, "Coins tidak cukup"
+	end
+
+	coins.Value -= item.Price
+	data.Owned[itemId] = true
+	giveItem(player, itemId)
+	ownedEvent:FireClient(player, data.Owned)
+
+	return true, "Berhasil membeli " .. item.Name
+end
+
+getOwnedFunc.OnServerInvoke = function(player)
+	local data = playerData[player]
+	return data and data.Owned or {}
+end
+
+Players.PlayerAdded:Connect(onPlayerAdded)
+Players.PlayerRemoving:Connect(onPlayerRemoving)
+
+-- Tangani pemain yang sudah masuk sebelum script jalan
+for _, player in ipairs(Players:GetPlayers()) do
+	task.spawn(onPlayerAdded, player)
+end
+
+game:BindToClose(function()
+	for _, player in ipairs(Players:GetPlayers()) do
+		saveData(player)
+	end
+end)
+]]></ProtectedString></Properties></Item></Item><Item class="ServerStorage" referent="RBX7"><Properties><string name="Name">ServerStorage</string></Properties><Item class="Folder" referent="RBX6"><Properties><string name="Name">ShopItems</string></Properties></Item></Item><Item class="StarterGui" referent="RBX9"><Properties><string name="Name">StarterGui</string></Properties><Item class="LocalScript" referent="RBX8"><Properties><string name="Name">ShopClient</string><ProtectedString name="Source"><![CDATA[-- TIPE: LocalScript
+-- LOKASI: StarterGui
+-- NAMA: ShopClient
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local player = Players.LocalPlayer
+local ShopConfig = require(ReplicatedStorage:WaitForChild("ShopConfig"))
+local remotes = ReplicatedStorage:WaitForChild("ShopRemotes")
+local purchaseFunc = remotes:WaitForChild("PurchaseItem")
+local getOwnedFunc = remotes:WaitForChild("GetOwned")
+local ownedEvent = remotes:WaitForChild("OwnedUpdated")
+
+local owned = {}
+local buttons = {}
+
+-- ========== UI ==========
+local gui = Instance.new("ScreenGui")
+gui.Name = "ShopGui"
+gui.ResetOnSpawn = false
+gui.Parent = player:WaitForChild("PlayerGui")
+
+local function corner(parent, radius)
+	local c = Instance.new("UICorner")
+	c.CornerRadius = UDim.new(0, radius or 8)
+	c.Parent = parent
+end
+
+local openButton = Instance.new("TextButton")
+openButton.Size = UDim2.new(0, 110, 0, 40)
+openButton.Position = UDim2.new(0, 15, 0.5, -20)
+openButton.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+openButton.Text = "🛒 Shop"
+openButton.TextColor3 = Color3.new(1, 1, 1)
+openButton.Font = Enum.Font.GothamBold
+openButton.TextSize = 18
+openButton.Parent = gui
+corner(openButton)
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 420, 0, 360)
+frame.Position = UDim2.new(0.5, -210, 0.5, -180)
+frame.BackgroundColor3 = Color3.fromRGB(30, 30, 40)
+frame.Visible = false
+frame.Parent = gui
+corner(frame, 12)
+
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1, -60, 0, 40)
+title.Position = UDim2.new(0, 15, 0, 5)
+title.BackgroundTransparency = 1
+title.Text = "TOKO"
+title.TextXAlignment = Enum.TextXAlignment.Left
+title.TextColor3 = Color3.new(1, 1, 1)
+title.Font = Enum.Font.GothamBold
+title.TextSize = 22
+title.Parent = frame
+
+local closeButton = Instance.new("TextButton")
+closeButton.Size = UDim2.new(0, 32, 0, 32)
+closeButton.Position = UDim2.new(1, -42, 0, 9)
+closeButton.BackgroundColor3 = Color3.fromRGB(200, 60, 60)
+closeButton.Text = "X"
+closeButton.TextColor3 = Color3.new(1, 1, 1)
+closeButton.Font = Enum.Font.GothamBold
+closeButton.TextSize = 16
+closeButton.Parent = frame
+corner(closeButton, 6)
+
+local coinsLabel = Instance.new("TextLabel")
+coinsLabel.Size = UDim2.new(1, -30, 0, 24)
+coinsLabel.Position = UDim2.new(0, 15, 0, 45)
+coinsLabel.BackgroundTransparency = 1
+coinsLabel.Text = "Coins: 0"
+coinsLabel.TextXAlignment = Enum.TextXAlignment.Left
+coinsLabel.TextColor3 = Color3.fromRGB(255, 215, 0)
+coinsLabel.Font = Enum.Font.GothamMedium
+coinsLabel.TextSize = 16
+coinsLabel.Parent = frame
+
+local list = Instance.new("ScrollingFrame")
+list.Size = UDim2.new(1, -30, 1, -115)
+list.Position = UDim2.new(0, 15, 0, 75)
+list.BackgroundTransparency = 1
+list.BorderSizePixel = 0
+list.ScrollBarThickness = 6
+list.AutomaticCanvasSize = Enum.AutomaticSize.Y
+list.CanvasSize = UDim2.new(0, 0, 0, 0)
+list.Parent = frame
+
+local layout = Instance.new("UIListLayout")
+layout.Padding = UDim.new(0, 8)
+layout.Parent = list
+
+local messageLabel = Instance.new("TextLabel")
+messageLabel.Size = UDim2.new(1, -30, 0, 24)
+messageLabel.Position = UDim2.new(0, 15, 1, -32)
+messageLabel.BackgroundTransparency = 1
+messageLabel.Text = ""
+messageLabel.TextColor3 = Color3.new(1, 1, 1)
+messageLabel.Font = Enum.Font.Gotham
+messageLabel.TextSize = 14
+messageLabel.Parent = frame
+
+-- ========== Logika ==========
+local function showMessage(text, isSuccess)
+	messageLabel.Text = text
+	messageLabel.TextColor3 = isSuccess and Color3.fromRGB(90, 220, 120) or Color3.fromRGB(255, 100, 100)
+	local current = text
+	task.delay(3, function()
+		if messageLabel.Text == current then
+			messageLabel.Text = ""
+		end
+	end)
+end
+
+local function refreshButtons()
+	for itemId, button in pairs(buttons) do
+		if owned[itemId] then
+			button.Text = "Dimiliki"
+			button.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+			button.Active = false
+		else
+			local item = ShopConfig.GetItem(itemId)
+			button.Text = "Beli (" .. item.Price .. ")"
+			button.BackgroundColor3 = Color3.fromRGB(60, 170, 90)
+			button.Active = true
+		end
+	end
+end
+
+local function createItemCard(item)
+	local card = Instance.new("Frame")
+	card.Size = UDim2.new(1, -8, 0, 70)
+	card.BackgroundColor3 = Color3.fromRGB(45, 45, 60)
+	card.Parent = list
+	corner(card)
+
+	local nameLabel = Instance.new("TextLabel")
+	nameLabel.Size = UDim2.new(1, -130, 0, 28)
+	nameLabel.Position = UDim2.new(0, 12, 0, 8)
+	nameLabel.BackgroundTransparency = 1
+	nameLabel.Text = item.Name
+	nameLabel.TextXAlignment = Enum.TextXAlignment.Left
+	nameLabel.TextColor3 = Color3.new(1, 1, 1)
+	nameLabel.Font = Enum.Font.GothamBold
+	nameLabel.TextSize = 17
+	nameLabel.Parent = card
+
+	local descLabel = Instance.new("TextLabel")
+	descLabel.Size = UDim2.new(1, -130, 0, 24)
+	descLabel.Position = UDim2.new(0, 12, 0, 36)
+	descLabel.BackgroundTransparency = 1
+	descLabel.Text = item.Description
+	descLabel.TextXAlignment = Enum.TextXAlignment.Left
+	descLabel.TextColor3 = Color3.fromRGB(180, 180, 190)
+	descLabel.Font = Enum.Font.Gotham
+	descLabel.TextSize = 13
+	descLabel.Parent = card
+
+	local buyButton = Instance.new("TextButton")
+	buyButton.Size = UDim2.new(0, 105, 0, 38)
+	buyButton.Position = UDim2.new(1, -117, 0.5, -19)
+	buyButton.TextColor3 = Color3.new(1, 1, 1)
+	buyButton.Font = Enum.Font.GothamBold
+	buyButton.TextSize = 14
+	buyButton.Parent = card
+	corner(buyButton, 6)
+
+	buttons[item.Id] = buyButton
+
+	buyButton.MouseButton1Click:Connect(function()
+		if owned[item.Id] then
+			return
+		end
+		local success, message = purchaseFunc:InvokeServer(item.Id)
+		showMessage(message or "Terjadi kesalahan", success)
+	end)
+end
+
+for _, item in ipairs(ShopConfig.Items) do
+	createItemCard(item)
+end
+
+-- Sinkronisasi data
+owned = getOwnedFunc:InvokeServer() or {}
+refreshButtons()
+
+ownedEvent.OnClientEvent:Connect(function(newOwned)
+	owned = newOwned
+	refreshButtons()
+end)
+
+-- Tampilan coins
+local coins = player:WaitForChild("leaderstats"):WaitForChild("Coins")
+local function updateCoins()
+	coinsLabel.Text = "Coins: " .. coins.Value
+end
+updateCoins()
+coins.Changed:Connect(updateCoins)
+
+-- Buka / tutup
+openButton.MouseButton1Click:Connect(function()
+	frame.Visible = not frame.Visible
+end)
+closeButton.MouseButton1Click:Connect(function()
+	frame.Visible = false
+end)
+]]></ProtectedString></Properties></Item></Item></roblox>
